@@ -1,4 +1,4 @@
-# Telemedicine Somalia - User Guide
+# Telemedicine Somalia 
 
 ## Welcome to Telemedicine Somalia
 
