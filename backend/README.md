@@ -1,4 +1,4 @@
-# Tayo Health Care: A Comprehensive Telemedicine Management System
+# Telemedicine Somalia: A Comprehensive Telemedicine Management System
 
 ## Brief Description
 
@@ -27,7 +27,7 @@ The implementation addresses key challenges in modern healthcare delivery by int
 
 ### Purpose
 
-The Tayo Health Care system is designed to streamline healthcare service delivery through digital transformation. The platform enables healthcare institutions to manage patient appointments, facilitate telemedicine consultations, process laboratory requests, maintain medical records, and handle administrative tasks through an integrated web-based interface and mobile application backend.
+Telemedicine Somalia is designed to streamline healthcare service delivery through digital transformation. The platform enables healthcare institutions to manage patient appointments, facilitate telemedicine consultations, process laboratory requests, maintain medical records, and handle administrative tasks through an integrated web-based interface and mobile application backend.
 
 ### Key Features
 
@@ -121,7 +121,7 @@ Before installing the system, ensure the following software is installed on your
 1. **Clone the repository:**
    ```bash
    git clone [repository-url]
-   cd TayoHealthCare_System_Nodejs
+   cd Telemedicine-Somalia
    ```
 
 2. **Install dependencies:**
@@ -140,7 +140,7 @@ Before installing the system, ensure the following software is installed on your
    
    Example `setting_strings.env`:
    ```
-   app_name=Tayo Health Care
+   app_name=Telemedicine Somalia
    jwt_secret=YourSecretKeyHere
    time_zone=Africa/Johannesburg
    time_zone_hour=3
@@ -327,7 +327,7 @@ Note: For research publication, additional validation metrics, performance bench
 ## Repository Structure
 
 ```
-TayoHealthCare_System_Nodejs/
+Telemedicine-Somalia/
 ├── application/
 │   ├── controller/
 │   │   └── utils.js                 # Utility functions
@@ -391,7 +391,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 If you use this software in your research, please cite the associated research paper. A BibTeX citation template is provided below:
 
 ```bibtex
-@article{tayohealthcare2024,
+@article{telemedicinesomalia2024,
   title={[Title of the Research Paper]},
   author={[Author Name 1] and [Author Name 2] and [Additional Authors]},
   journal={[Journal Name]},
@@ -406,7 +406,7 @@ If you use this software in your research, please cite the associated research p
 For conference publications:
 
 ```bibtex
-@inproceedings{tayohealthcare2024,
+@inproceedings{telemedicinesomalia2024,
   title={[Title of the Research Paper]},
   author={[Author Name 1] and [Author Name 2] and [Additional Authors]},
   booktitle={[Conference Name]},
