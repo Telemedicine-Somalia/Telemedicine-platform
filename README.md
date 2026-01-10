@@ -1,8 +1,93 @@
-# Telemedicine Somalia 
+# Telemedicine Somalia
 
-## Welcome to Telemedicine Somalia
+> **A Comprehensive Telemedicine Management System for Remote Healthcare Delivery**
 
-Telemedicine Somalia is a comprehensive telemedicine platform that connects patients with healthcare providers, enabling remote healthcare delivery and convenient medical consultations. Whether you need to book an appointment, consult with a doctor via video, manage your prescriptions, or access your medical records, our platform provides everything you need for your healthcare journey.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Repository](https://img.shields.io/badge/Repository-GitHub-blue.svg)](https://github.com/Telemedicine-Somalia/Telemedicine-platform)
+
+## 📥 How to Download
+
+### Mobile Application Download
+
+The Telemedicine Somalia mobile application is available for download on the following platforms:
+
+#### Android Devices
+- **APK Download**: Available from the [Releases](https://github.com/Telemedicine-Somalia/Telemedicine-platform/releases) section
+- **System Requirements**: 
+  - Android 8.0 (Oreo) or later
+  - Minimum 100MB free storage space
+  - Internet connection required
+
+#### iOS Devices
+- **Download**: Available from the [Releases](https://github.com/Telemedicine-Somalia/Telemedicine-platform/releases) section
+- **System Requirements**:
+  - iOS 12.0 or later
+  - iPhone/iPad compatible
+  - Internet connection required
+
+### Repository Download
+
+To download the source code for research or development purposes:
+
+#### Option 1: Clone the Repository (Recommended)
+```bash
+git clone https://github.com/Telemedicine-Somalia/Telemedicine-platform.git
+cd Telemedicine-platform
+```
+
+#### Option 2: Download ZIP
+1. Visit the [GitHub Repository](https://github.com/Telemedicine-Somalia/Telemedicine-platform)
+2. Click the green **"Code"** button
+3. Select **"Download ZIP"**
+4. Extract the ZIP file to your desired location
+
+#### Option 3: Use GitHub CLI
+```bash
+gh repo clone Telemedicine-Somalia/Telemedicine-platform
+```
+
+### Quick Installation Guide
+
+1. **Download the Repository**: Use any of the methods above
+2. **Navigate to Backend Directory**: `cd backend`
+3. **Install Dependencies**: `npm install`
+4. **Configure Environment Variables**: Set up required configuration files
+5. **Start the Server**: `npm start`
+
+For detailed installation instructions, see the [Backend README](backend/README.md) and [App README](app/README.md).
+
+## 📋 Brief Description
+
+Telemedicine Somalia is a comprehensive telemedicine platform that connects patients with healthcare providers, enabling remote healthcare delivery and convenient medical consultations. This research-based system addresses key challenges in modern healthcare delivery by integrating appointment management, real-time notifications, automated reminders, prescription management, and laboratory request workflows into a unified platform.
+
+The system supports both web-based administrative interfaces and mobile application integration through RESTful APIs, enabling seamless communication between patients, healthcare providers, and administrative staff.
+
+## 🎯 Who Can Use This Platform?
+
+### For Patients
+- Access healthcare services from the comfort of your home
+- Book appointments with doctors at your convenience
+- Engage in video consultations with healthcare providers
+- View and manage your prescriptions
+- Track your appointment history and treatment progress
+- Access laboratory test results
+- Manage your health information and self-care resources
+- Make secure payments for healthcare services
+
+### For Doctors
+- Manage your patient appointments and schedules
+- Conduct video consultations with patients
+- Create and manage patient prescriptions
+- Access patient medical history and records
+- Request laboratory tests for patients
+- View appointment schedules and patient information
+- Manage your profile and availability
+
+### For Researchers
+- Academic researchers studying telemedicine systems
+- Healthcare informatics researchers
+- Software developers interested in healthcare applications
+- Students learning about telemedicine platforms
 
 ## Who Can Use This Platform?
 
@@ -25,13 +110,21 @@ Telemedicine Somalia is a comprehensive telemedicine platform that connects pati
 - View appointment schedules and patient information
 - Manage your profile and availability
 
-## Getting Started
+## 🚀 Getting Started
 
-### Creating Your Account
+### Step 1: Download and Install
 
-1. **Download the App**
+Choose your preferred method based on your needs:
+
+- **End Users**: Download the mobile app APK from the [Releases](https://github.com/Telemedicine-Somalia/Telemedicine-platform/releases) section
+- **Developers/Researchers**: Clone or download the repository from GitHub
+- **System Administrators**: Follow the installation guide in the [Backend README](backend/README.md)
+
+### Step 2: Create Your Account
+
+1. **Download the Mobile App**
    - The Telemedicine Somalia mobile app is available for Android and iOS devices
-   - Download from the appropriate app store for your device
+   - Download the APK/IPA from the [Releases](https://github.com/Telemedicine-Somalia/Telemedicine-platform/releases) section
 
 2. **Registration**
    - Open the app and tap on "Register" or "Sign Up"
@@ -487,7 +580,7 @@ A: Yes, all payments are processed through secure, encrypted payment gateways.
 A: The app supports Android (version 8.0 and above) and iOS (version 12.0 and above) devices.
 
 **Q: How do I update the app?**
-A: Update through your device's app store (Google Play Store for Android, App Store for iOS).
+A: Download the latest version from the [Releases](https://github.com/Telemedicine-Somalia/Telemedicine-platform/releases) section and install it.
 
 **Q: What should I do if the app crashes?**
 A: Try restarting the app, clearing cache, or reinstalling. If issues persist, contact technical support.
@@ -540,5 +633,57 @@ For the latest updates and information, visit our website or follow us on social
 
 ---
 
-*Last Updated: 2024*
-*Version: 1.0*
+## 📚 Research and Publication
+
+### Associated Research Paper
+
+This software accompanies a peer-reviewed research publication. For detailed methodology, experimental results, and analysis, please refer to the published research paper.
+
+**Paper Title:** [Title of the Research Paper]
+
+**Authors:**  
+- [Author Name 1]  
+- [Author Name 2]  
+- [Additional Authors as applicable]
+
+**Institution:** [Institution Name]
+
+**Publication Status:** [Submitted / Accepted / Published]
+
+**Journal/Conference:** [If applicable, specify the venue]
+
+**DOI/URL:** [If published, provide DOI or URL]
+
+### Citation
+
+If you use this software in your research, please cite the associated research paper:
+
+```bibtex
+@article{telemedicinesomalia2024,
+  title={[Title of the Research Paper]},
+  author={[Author Name 1] and [Author Name 2] and [Additional Authors]},
+  journal={[Journal Name]},
+  year={2024},
+  publisher={[Publisher]},
+  doi={[DOI if available]},
+  url={[URL if available]},
+  note={Software available at: \url{https://github.com/Telemedicine-Somalia/Telemedicine-platform}}
+}
+```
+
+### Repository Information
+
+- **GitHub Repository**: [https://github.com/Telemedicine-Somalia/Telemedicine-platform](https://github.com/Telemedicine-Somalia/Telemedicine-platform)
+- **License**: MIT License
+- **Version**: 1.0
+- **Last Updated**: 2024
+
+### Contributing
+
+We welcome contributions from researchers, developers, and healthcare professionals. Please see our contributing guidelines for more information.
+
+---
+
+*Last Updated: 2024*  
+*Version: 1.0*  
+*Repository: [https://github.com/Telemedicine-Somalia/Telemedicine-platform](https://github.com/Telemedicine-Somalia/Telemedicine-platform)*
