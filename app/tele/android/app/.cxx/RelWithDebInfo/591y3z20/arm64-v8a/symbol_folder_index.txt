@@ -1,0 +1,1 @@
+D:\telemedicene\tele\build\app\intermediates\cxx\RelWithDebInfo\591y3z20\obj\arm64-v8a

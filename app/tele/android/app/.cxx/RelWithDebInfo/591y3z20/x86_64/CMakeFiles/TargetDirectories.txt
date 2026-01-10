@@ -1,0 +1,2 @@
+D:/telemedicene/tele/android/app/.cxx/RelWithDebInfo/591y3z20/x86_64/CMakeFiles/edit_cache.dir
+D:/telemedicene/tele/android/app/.cxx/RelWithDebInfo/591y3z20/x86_64/CMakeFiles/rebuild_cache.dir

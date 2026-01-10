@@ -1,0 +1,7 @@
+-keep class **.zego.** { *; }
+-keep class com.hiennv.flutter_callkit_incoming.** { *; }
+-keep class com.itgsa.opensdk.mediaunit.KaraokeMediaHelper { *; }
+-keep class java.beans.ConstructorProperties { *; }
+-keep class java.beans.Transient { *; }
+-keep class org.conscrypt.** { *; }
+-keep class org.w3c.dom.bootstrap.DOMImplementationRegistry { *; }

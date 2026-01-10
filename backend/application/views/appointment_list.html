@@ -1,0 +1,230 @@
+<% include header.html %>
+
+<!-- Main content -->
+<script>
+  function timeSince(date) {
+    date = new Date(date);
+    var seconds = Math.floor((new Date() - date) / 1000);
+
+    var interval = seconds / 31536000;
+    if (interval > 1) return Math.floor(interval) + " year(s) ago";
+    interval = seconds / 2592000;
+    if (interval > 1) return Math.floor(interval) + " month(s) ago";
+    interval = seconds / 86400;
+    if (interval > 1) return Math.floor(interval) + " day(s) ago";
+    interval = seconds / 3600;
+    if (interval > 1) return Math.floor(interval) + " hour(s) ago";
+    interval = seconds / 60;
+    if (interval > 1) return Math.floor(interval) + " minute(s) ago";
+    return Math.floor(seconds) + " second(s) ago";
+  }
+</script>
+
+<section class="content">
+  <div class="container-fluid">
+   
+
+    <div class="card card-default">
+      <div class="card-body">
+        <form class="form-data" method="post" action="/appointment_list"
+          style="background-color:#fff; padding:10px; margin-bottom:10px;">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Status</label>
+                <select class="form-control" name="status">
+                  <% if(status==0){ %>
+                    <option value="ALL">All</option>
+                    <option value="0" selected>Pending</option>
+                    <option value="1">Confirmed</option>
+                    <option value="2">Completed</option>
+                    <option value="4">Re-appointment</option>
+                    <option value="3">Cancelled</option>
+                  <% } else if(status==1) { %>
+                    <option value="ALL">All</option>
+                    <option value="0">Pending</option>
+                    <option value="1" selected>Confirmed</option>
+                    <option value="2">Completed</option>
+                    <option value="4">Re-appointment</option>
+                    <option value="3">Cancelled</option>
+                  <% } else if(status==2) { %>
+                    <option value="ALL">All</option>
+                    <option value="0">Pending</option>
+                    <option value="1">Confirmed</option>
+                    <option value="2" selected>Completed</option>
+                    <option value="4">Re-appointment</option>
+                    <option value="3">Cancelled</option>
+                  <% } else if(status==3) { %>
+                    <option value="ALL">All</option>
+                    <option value="0">Pending</option>
+                    <option value="1">Confirmed</option>
+                    <option value="2">Completed</option>
+                    <option value="4">Re-appointment</option>
+                    <option value="3" selected>Cancelled</option>
+                  <% } else if(status==4) { %>
+                    <option value="ALL">All</option>
+                    <option value="0">Pending</option>
+                    <option value="1">Confirmed</option>
+                    <option value="2">Completed</option>
+                    <option value="4" selected>Re-appointment</option>
+                    <option value="3">Cancelled</option>
+                  <% } else { %>
+                    <option value="ALL">All</option>
+                    <option value="0">Pending</option>
+                    <option value="1">Confirmed</option>
+                    <option value="2">Completed</option>
+                    <option value="4">Re-appointment</option>
+                    <option value="3">Cancelled</option>
+                  <% } %>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 offset-md-5">
+              <div class="row">
+                <div class="col-6">
+                  <input type="text" class="form-control datepicker" placeholder="Start Date"
+                    value="<%= f_start_date %>" name="start_date">
+                </div>
+                <div class="col-6">
+                  <input type="text" class="form-control datepicker" placeholder="End Date"
+                    value="<%= f_end_date %>" name="end_date">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-2 offset-md-10">
+              <button type="submit" class="btn system-bottons btn-block">
+                <i class="far fa-credit-card"></i> <%= process.env.submit %>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <div>
+        <table class="table table-bordered table-hover" id="tbl_data">
+          <thead>
+            <tr>
+              <th><%= process.env.sequence_id %></th>
+              <th>Doctor</th>
+              <th>Patient</th>
+              <th>Day</th>
+              <th>Appointment date</th>
+              <th>Time</th>
+              <th>Status</th>
+              <th>Created</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% detail.forEach(function(entry) { %>
+              <tr>
+                <td><%= entry.sequence_id %></td>
+                <td><%= entry.doctor_name %></td>
+                <td><%= entry.patient_name %></td>
+                <td><%= entry.shift_day %></td>
+                <td><%= moment(entry.appointment_date).format("DD-MMMM-YYYY") %></td>
+                <td><%= entry.shift_time %></td>
+                <td>
+                  <% if(entry.status=="0"){ %>
+                    <span class="system-bottons" style="padding: 5px; border-radius: 4px;">Pending</span>
+                  <% } else if(entry.status=="1"){ %>
+                    <span class="system-bottons" style="padding: 5px; border-radius: 4px;">Confirmed</span>
+                  <% } else if(entry.status=="2"){ %>
+                    <span class="system-bottons" style="padding: 5px; border-radius: 4px;">Completed</span>
+                  <% } else if(entry.status=="4"){ %>
+                    <span class="system-bottons" style="padding: 5px; border-radius: 4px;">Re-appointment</span>
+                  <% } else { %>
+                    <span class="btn-danger" style="padding: 5px; border-radius: 4px;">Cancelled</span>
+                  <% } %>
+                </td>
+                <td>
+                  <%= moment(entry.create_date).format("hh:mm a") %><br/>
+                  <%= moment(entry.create_date).format("DD-MM-YYYY") %>
+                </td>
+                <td>
+                  <% if(admin_type==0 ) { %>
+                    <div>
+                      <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                        <%= process.env.action %> <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-submenu" style="margin: 2px;">
+                          <form method="POST" action="/edit_appointment">
+                            <input type="hidden" name="appointment_id" value="<%=entry._id%>" />
+                            <button type="submit" class="btn btn-default" style="width:100%;">
+                              <i class="fas fa-pencil-alt"></i> <%= process.env.edit %>
+                            </button>
+                          </form>
+                        </li>
+                        <li class="dropdown-submenu" style="margin: 2px;">
+                          <button type="button" class="btn btn-default" style="width:100%;"
+                            onclick="view_admin(
+                              '<%= entry.sequence_id %>',
+                              '<%= entry.name %>',
+                              '<%= entry.phone %>',
+                              '<%= entry.email %>',
+                              '<%= entry.user_name %>',
+                              '<%= entry.experience_years %>',
+                              '<%= entry.consultation_fee %>',
+                              '<%= entry.picture %>',
+                              '<%= entry.extra_detail %>'
+                              )">
+                            <i class="fas fa-folder"></i> <%= process.env.view %>
+                          </button>
+                        </li>
+                        <li class="dropdown-submenu" style="margin: 2px;">
+                          <button type="button" class="btn btn-default" style="width:100%;"
+                            data-toggle="modal" data-target="#deleteModal"
+                            data-id="<%=entry._id%>">
+                            <i class="fas fa-trash"></i> Delete
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  <% } %>
+                </td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <form method="POST" action="/delete_appointment">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirm Deletion</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to delete this appointment?
+          <input type="hidden" name="appointment_id" id="modalAppointmentId" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('#deleteModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var appointmentId = button.data('id');
+    var modal = $(this);
+    modal.find('#modalAppointmentId').val(appointmentId);
+  });
+</script>
+
+<% include footer.html %>
