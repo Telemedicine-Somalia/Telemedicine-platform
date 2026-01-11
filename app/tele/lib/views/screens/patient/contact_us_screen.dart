@@ -45,7 +45,7 @@ class ContactUsScreen extends StatelessWidget {
 
                 /// App Name
                 Text(
-                  "Tayo Health Care",
+                  "Telemedicine Somalia",
                   style: GoogleFonts.poppins(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -86,7 +86,7 @@ class ContactUsScreen extends StatelessWidget {
                 }),
                 const SizedBox(height: 15),
 
-                contactItem(Icons.email, "email".tr(), "info@tayocare.com", () {
+                contactItem(Icons.email, "email".tr(), "info@telemedicinesomalia.com", () {
                   _launchURL("mailto:abuubakarciise4@gmail.com?subject=Support%20Request&body=Hello,%20I%20need%20assistance.", false);
                 }),
                 const SizedBox(height: 15),
@@ -97,13 +97,13 @@ class ContactUsScreen extends StatelessWidget {
                 const SizedBox(height: 15),
 
                 // contactItem(Icons.video_call, "Teleconsultation", "Schedule a virtual doctor visit", () {
-                //   _launchURL("https://www.tayocare.com/teleconsultation", false);
+                //   _launchURL("https://www.telemedicinesomalia.com/teleconsultation", false);
                 // }),
                 const SizedBox(height: 20),
 
                 /// Footer
                 Text(
-                  "© 2025 Tayo Health Care",
+                  "© 2025 Telemedicine Somalia",
                   style: GoogleFonts.poppins(fontSize: 12, color: Colors.black45),
                 ),
               ],

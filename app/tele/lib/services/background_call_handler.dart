@@ -88,7 +88,7 @@ class BackgroundCallHandler {
       final params = CallKitParams(
         id: uuid,
         nameCaller: data['callerName'] ?? 'Unknown Caller',
-        appName: 'Tayo healthcare',
+        appName: 'Telemedicine Somalia',
         avatar: avatarUrl,
         handle: data['callerPhone'] ?? '',
         type: int.tryParse(data['callType'] ?? '0') ?? 0,
@@ -186,7 +186,7 @@ class BackgroundCallHandler {
       final params = CallKitParams(
         id: uuid,
         nameCaller: data['callerName'] ?? 'Unknown Caller',
-        appName: 'Tayo healthcare',
+        appName: 'Telemedicine Somalia',
         avatar: avatarUrl,
         handle: data['callerPhone'] ?? '',
         type: int.tryParse(data['callType'] ?? '0') ?? 0,

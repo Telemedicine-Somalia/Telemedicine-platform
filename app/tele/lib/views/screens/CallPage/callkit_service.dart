@@ -45,7 +45,7 @@
 //     final params = CallKitParams(
 //       id: uuid,
 //       nameCaller: callerName,
-//       appName: 'Tayo healthcare',
+//       appName: 'Telemedicine Somalia',
 //       avatar: avatarUrl,
 //       handle: callerPhone,
 //       type: int.tryParse(callType) ?? 0,
@@ -240,7 +240,7 @@ class CallKitService {
     final params = CallKitParams(
       id: uuid,
       nameCaller: callerName,
-      appName: 'Tayo healthcare',
+      appName: 'Telemedicine Somalia',
       avatar: avatarUrl,
       handle: callerPhone,
       type: int.tryParse(callType) ?? 0,

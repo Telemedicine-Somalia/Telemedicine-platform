@@ -48,13 +48,13 @@ Future<void> _showBackgroundCallKitDirect(Map<String, dynamic> data) async {
     final avatarUrl = picture.startsWith('http')
         ? picture
         : picture.isNotEmpty
-            ? 'https://api.tayohealthcare.com/$picture'
+            ? 'https://api.telemedicinesomalia.com/$picture'
             : '';
 
     final params = CallKitParams(
       id: uuid,
       nameCaller: data['callerName'] ?? 'Unknown Caller',
-      appName: 'Tayo healthcare',
+      appName: 'Telemedicine Somalia',
       avatar: avatarUrl,
       handle: data['callerPhone'] ?? '',
       type: int.tryParse(data['callType'] ?? '0') ?? 0,
@@ -75,9 +75,9 @@ Future<void> _showBackgroundCallKitDirect(Map<String, dynamic> data) async {
     );
 
     await FlutterCallkitIncoming.showCallkitIncoming(params);
-    print('🔔 Background CallKit shown successfully with ID: $uuid');
+    print('Background CallKit shown successfully with ID: $uuid');
   } catch (e) {
-    print('❌ Error showing background CallKit: $e');
+    print('Error showing background CallKit: $e');
   }
 }
 
@@ -85,9 +85,9 @@ Future<void> _showBackgroundCallKitDirect(Map<String, dynamic> data) async {
 Future<void> _endBackgroundCallDirect() async {
   try {
     await FlutterCallkitIncoming.endAllCalls();
-    print('🔔 Background call ended successfully');
+    print(' Background call ended successfully');
   } catch (e) {
-    print('❌ Error ending background call: $e');
+    print('Error ending background call: $e');
   }
 }
 

@@ -29,7 +29,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-        android:label="Tayo"
+        android:label="Telemedicine Somalia"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:foregroundServiceType="camera|microphone|mediaProjection">
@@ -175,7 +175,7 @@
     <uses-permission android:name="android.permission.CONTROL_INCALL_EXPERIENCE" />
 
     <application
-        android:label="Tayo"
+        android:label="Telemedicine Somalia"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:foregroundServiceType="camera|microphone|mediaProjection">

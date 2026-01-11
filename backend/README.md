@@ -7,21 +7,28 @@ This repository presents a full-stack telemedicine healthcare management system 
 The implementation addresses key challenges in modern healthcare delivery by integrating appointment management, real-time notifications, automated reminders, prescription management, and laboratory request workflows into a unified platform. The system supports both web-based administrative interfaces and mobile application integration through RESTful APIs, enabling seamless communication between patients, healthcare providers, and administrative staff.
 
 ## Associated Research Paper
-
-**Paper Title:** [Title of the Research Paper]
-
-**Authors:**  
-- [Author Name 1]  
-- [Author Name 2]  
-- [Additional Authors as applicable]
-
-**Institution:** [Institution Name]
-
-**Publication Status:** [Submitted / Accepted / Published]
-
-**Journal/Conference:** [If applicable, specify the venue]
-
-**DOI/URL:** [If published, provide DOI or URL]
+Developing a Context-Aware Telemedicine Platform to Improve Healthcare Accessibility in Somalia
+Abdullahi Dirie Farah¹
+ abdullahidiriefarah@gmail.com
+Abukar Isse Mohamud¹
+abuubakarciise4@gmail.com
+Adnan Hassan Abdullahi¹
+cadnaanhassan2003@gmail.com
+Osman Yahya Yusuf Nur¹
+cusmaanyaxye1965@gmail.com
+Mohamed Ahmed Mohamud¹
+mohamed.ahmed@just.edu.so
+Mohamed Abdullahi Ali Khalaf1
+khalaf@just.edu.so
+Mohamed Aweis Amin¹
+m.aweis@just.edu.so
+ 
+Affiliations
+1 Faculty of Computer and Information Technology, Jamhuriya University of Science and Technology (JUST), Mogadishu – Somalia
+* Corresponding Author
+Mohamed Aweis Amin 1*
+Email address: m.aweis@just.edu.so
+Address: Mogadishu, Somalia
 
 ## System Overview
 
@@ -366,7 +373,6 @@ Telemedicine-Somalia/
 ├── data/                            # Application data
 ├── index.js                         # Application entry point
 ├── package.json                     # Dependencies and scripts
-├── LICENSE                          # License file
 ├── serviceAccountKey.json           # Firebase credentials (not in repo)
 ├── setting_strings.env              # System settings
 ├── admin_strings.env                # Admin strings
@@ -374,79 +380,6 @@ Telemedicine-Somalia/
 └── constants.env                    # Application constants
 ```
 
-## License
-
-This project is licensed under the MIT License.
-
-Copyright (c) 2026 Adnan Hassan Abdullhi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-## Citation
-
-If you use this software in your research, please cite the associated research paper. A BibTeX citation template is provided below:
-
-```bibtex
-@article{telemedicinesomalia2024,
-  title={[Title of the Research Paper]},
-  author={[Author Name 1] and [Author Name 2] and [Additional Authors]},
-  journal={[Journal Name]},
-  year={2024},
-  publisher={[Publisher]},
-  doi={[DOI if available]},
-  url={[URL if available]},
-  note={Software available at: \url{[Repository URL]}}
-}
-```
-
-For conference publications:
-
-```bibtex
-@inproceedings{telemedicinesomalia2024,
-  title={[Title of the Research Paper]},
-  author={[Author Name 1] and [Author Name 2] and [Additional Authors]},
-  booktitle={[Conference Name]},
-  year={2024},
-  pages={[Page Numbers]},
-  doi={[DOI if available]},
-  url={[URL if available]},
-  note={Software available at: \url{[Repository URL]}}
-}
-```
 
 ## Acknowledgements
-
-We acknowledge the contributions of the following:
-
-- The open-source community for the excellent libraries and frameworks that made this project possible
-- Healthcare professionals who provided domain expertise and feedback during system development
-- Research participants who contributed to system validation and evaluation
-
-Special thanks to all contributors and reviewers who have helped improve this system.
-
-## Contact Information
-
-For questions, issues, or collaboration inquiries regarding this research software:
-
-**Principal Investigator / Corresponding Author:**  
-[Name]  
-[Institution]  
-Email: [email address]
-
-**Technical Contact:**  
-Abdirahim Yusuf  
-Email: [email address]
-
-**Repository Maintainer:**  
-[Name]  
-Email: [email address]
-
-For bug reports and feature requests, please use the issue tracker in this repository.
-
----
-
-**Note for Reviewers and Researchers:** This software accompanies a peer-reviewed research publication. The system has been implemented and validated as described in the associated paper. For detailed methodology, experimental results, and analysis, please refer to the published research paper.
+The authors acknowledge the Faculty of Computer and Information Technology at Jamhuriya University of Science and Technology for providing the academic environment and support necessary to conduct this research.

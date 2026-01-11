@@ -167,8 +167,8 @@ exports.send_email_otp = function (req, email, msg) {
   const htmlTemplate = `
     <div style="max-width:520px;margin:40px auto;border-radius:14px;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid #e0e7ef;padding:36px 40px 32px 40px;background:#fff;font-family:'Segoe UI',sans-serif;">
         <div style="text-align:center;">
-            <img src="https://img.icons8.com/color/96/000000/health-checkup.png" alt="Tayo HealthCare" style="width:64px;height:64px;margin-bottom:12px;">
-            <h2 style="color:#1a73e8;margin-bottom:8px;font-weight:600;">Tayo HealthCare</h2>
+            <img src="https://img.icons8.com/color/96/000000/health-checkup.png" alt="Telemedicine Somalia" style="width:64px;height:64px;margin-bottom:12px;">
+            <h2 style="color:#1a73e8;margin-bottom:8px;font-weight:600;">Telemedicine Somalia</h2>
             <div style="font-size:20px;color:#222;font-weight:500;margin-bottom:18px;">Password Reset Request</div>
         </div>
         <p style="font-size:16px;color:#444;margin-bottom:18px;">
@@ -185,14 +185,14 @@ exports.send_email_otp = function (req, email, msg) {
             If you did not request a password reset, please ignore this email or contact support.
         </p>
         <div style="margin-top:32px;text-align:center;">
-            <span style="font-size:15px;color:#888;">Thank you,<br><b>Tayo HealthCare Team</b></span>
+            <span style="font-size:15px;color:#888;">Thank you,<br><b>Telemedicine Somalia Team</b></span>
         </div>
     </div>
 `;
     var mailOptions = {
         from: senderEmail,
         to: email,
-        subject: 'Tayo HealthCare Password Reset OTP',
+        subject: 'Telemedicine Somalia Password Reset OTP',
         text: msg,
         html: htmlTemplate
     };
