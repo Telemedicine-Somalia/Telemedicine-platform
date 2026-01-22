@@ -44,7 +44,6 @@ Telemedicine Somalia is designed to streamline healthcare service delivery throu
 - **Laboratory Services**: Lab request processing, test result management, and record keeping
 - **Prescription Management**: Digital prescription creation, storage, and retrieval
 - **Payment Processing**: Transaction management and payment tracking
-- **Hospital Management**: Multi-hospital support with facility-specific configurations
 - **Feedback System**: Patient feedback collection and analysis
 - **Messaging System**: Internal communication between system users
 - **Reporting and Analytics**: Automated report generation for appointments, payments, hospitals, and feedback
@@ -170,6 +169,16 @@ Before installing the system, ensure the following software is installed on your
    In `index.js`, set the environment:
    ```javascript
    process.env.NODE_ENV = "development"  // or "production"
+   # Firebase Configuration
+FIREBASE_API_KEY=your_firebase_api_key
+FIREBASE_APP_ID=your_firebase_app_id
+FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+FIREBASE_PROJECT_ID=your_firebase_project_id
+
+# Payment Gateway Configuration (if applicable)
+MERCHANTUID=your_merchant_uid
+APIUSERID=your_api_user_id
+APIKEY=your_api_key
    ```
 
 ### Frontend Setup
